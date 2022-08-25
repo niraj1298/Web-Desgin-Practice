@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <!--<a href="index.html"><img src="images/logo.png"></a>-->
+            <div class="nav-links" class="navcontainer" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="Portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>NIRAJ NEPAL PORTFOLIO</h1>
+    <p>WELCOME TO NIRAJ'S JOURNEY IN THE WORLD OF TECH</p>
+     <a href="Portfolio.html" class="hero-btn"> Learn More</a>
+</div>
+
+<div class="boxes">
+    <div id="innercontent">
+        <div id="image-box">
+            <img src="images/snake.png" style="width:100%">
+            <h1 class="box-h">BNGA COMMUNITY</h1>
+            <p class="box-p">Connecting Bhutanese Nepali Youth to the world of gaming.</p>
+          </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div>
+        
+    </div>
+</div>
+    </section>
+    
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+</body>
+</html>
